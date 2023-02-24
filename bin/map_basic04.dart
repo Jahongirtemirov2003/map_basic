@@ -8,9 +8,15 @@ Return list_to_map variable
 */
 
 Map func(List lst1, List lst2) {
-  return;
+  Map mp = {};
+  for(int i = 0; i<lst1.length; i++)
+  {
+       mp[lst1[i]] = lst2[i];
+  }
+  
+  return mp;
 }
 
 void main() {
-  print(func());
+  print(func([1,2,3,4], ['a', 'b', 'c', 'd', 'e', 'd']));
 }

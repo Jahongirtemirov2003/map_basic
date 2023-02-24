@@ -7,7 +7,9 @@ Then return the map.
 */
 
 Map func() {
-  return;
+  Map mp = {};
+  mp['Alisher'] = 'Axmedov';
+  return mp;
 }
 
 void main() {
